@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MisionTic2022</title>
+</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="myScript.js"></script>
+<body>
+    <h1>Clientes</h1>
+    Id de cliente: <input type="number" id="idCliente"><br>
+    Nombre de cliente: <input type="text" id="nombreCliente"><br>
+    Correo de cliente: <input type="text" id="mailCliente"><br>
+    Edad de cliente: <input type="number" id="edadCliente"><br>
+
+    <button onclick="leerClientes()">TRAER CLIENTES</button>
+    <button onclick="editarCliente()">ACTUALIZAR CLIENTE</button>
+    <button onclick="guardarCliente()">GUARDAR CLIENTE</button>
+
+    <div id="listaClientes">
+        
+    </div>
+</body>
+</html>

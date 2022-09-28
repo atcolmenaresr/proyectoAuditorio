@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--/ # Meta description -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Juan Acevedo">
+    <meta name="description" content="Pagina donde el administrador controla los registros de los Mensajes.">
+    <meta http-equiv="Refresh" content="30">
+
+    <title> Mis Mensajes </title>
+    <link rel="stylesheet" type="text/css" href="StyleMessageAdmin.css">
+
+</head>
+
+<body>
+    <header id="main-header">
+        <h1 id="page-name">Mensajes</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tabla Mensajes</a></li>
+                <li><a href="#">Tabla Auditorios</a></li>
+                <li><a href="#">Cerrar Seccion</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div>
+        Id de Mensaje: <input type="number" id="idmesage"><br>
+        Mensaje: <textarea id="message"></textarea><br>
+
+        <button onclick="updatemessage()">ACTUALIZAR</button>
+        <button onclick="savemessage()">GUARDAR</button>
+    </div>
+
+    <table id="messagetable" class="display" cellspacing="0">
+        <tr>
+            <thead>
+                <th> Id </th>
+                <th> Mensaje </th>
+                <th>  </th>
+            </thead>
+        </tr>
+        <tbody id="contenttable">
+        </tbody>
+    </table>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./messageAdmin.js">
+
+</script>
+
+</html>
